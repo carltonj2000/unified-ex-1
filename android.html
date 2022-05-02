@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Android</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <p>
+      Use scrcpy for mirroring android phone on windows/linux/mac.
+      The requires that ADB is up and running.
+      On Linux run ADB as root to save yourself a whole bunch of headaches.
+      If you run into issues unplug the USB, <code>Revoke USB debugging authorizations</code>.
+      Plug in the phone again and accept the on screen authorization.
+      You can then log out of root to run <code>adb</code> or <code>scrcpy</code>.
+      When <code>adb devices</code> is NOT run as root the adb output shows <code>unauthorized</code> as
+      root you see <code>device</code> and now <code>adb shell</code> works as root or a regular users.
+    </p>
+    <h2>Android ADB Commands</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Command</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>adb devices</td>
+          <td>list adb devices</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Android Development Install On Ubuntu 20.04</h2>
+    <ul>
+      <li>
+        download and installed Android Studio and the SDK following the instructions
+        <a href="https://developer.android.com/studio">here</a>
+        and
+        <a href="https://developer.android.com/studio/install">here</a>
+      </li>
+      <li>
+        installed udev rules by following instructions from
+        <a href="https://github.com/carltonj2000/android-udev-rules">here</a>
+      </li>
+    </ul>
+    <p>
+      Skipped this on the latest install, instead added platform tools and add it
+      to the path.
+    </p>
+    <ul>
+      <li>
+        did <code>apt install adb</code> and <code>sudo usermod -aG plugdev $LOGNAME</code> as suggested
+        from
+        <a href="https://developer.android.com/studio/run/device">here</a>
+      </li>
+    </ul>
+  </body>
+</html>
