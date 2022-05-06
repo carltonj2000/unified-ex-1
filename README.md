@@ -16,6 +16,14 @@ Uses the local `rename-plugin.js` plugin to rename a file extension.
 
 Removes the emphasis in the markup document.
 
+## tree-insert.js
+
+Add caption to text.
+
+Based on the
+[How to Modify Nodes in an Abstract Syntax Tree](https://css-tricks.com/how-to-modify-nodes-in-an-abstract-syntax-tree/)
+article.
+
 ## Code History
 
 The code on this repository is base on the
@@ -28,4 +36,5 @@ npm install unified unified-stream remark-parse remark-rehype rehype-stringify r
 npm install gray-matter
 npm install remark-extract-frontmatter to-vfile remark-stringify yaml
 npm install unist-util-visit
+npm install remark-html remark-rehype rehype-document rehpe-format rehype-stringify
 ```

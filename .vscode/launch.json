@@ -6,7 +6,7 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/tree-parse-mod.js"
+      "program": "${workspaceFolder}/tree-insert.js"
     }
   ]
 }
