@@ -3,6 +3,8 @@ id: android1
 title: Android
 ---
 
+## Table of contents
+
 Use scrcpy for mirroring android phone on windows/linux/mac.
 The requires that ADB is up and running.
 On Linux run ADB as root to save yourself a whole bunch of headaches.
